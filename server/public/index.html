@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+    <title>Miruna API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <div role="main" class="container">
+        <h1>Hello</h1>
+        <br>
+        <p>Here's a description of routes</p>
+        <h5>/api GET routes:</h5>
+        <p>/stats &mdash; return count of queries from mobile and non-mobile devices</p>
+        <p>/bookings/total &mdash; number of bookings in database</p>
+        <p>/bookings/next_days?days=n &mdash; number of bookings for each day separately in all next n days. if days not specified defaults to 7</p>
+        <p>/bookings/page/p &mdash; most recent bookings. 15 per page. If p not specified default to 1</p>
+        <p>/bookings/i &mdash; return booking with id = i</p>
+        <p>/tables/free?date_booked_for &mdash; return free tables at specified date and time</p>
+        <p>/income &mdash; total income of restaurant from all orders</p>
+        <p>/menu/i &mdash; return menu with id = i. Default is 1, 'coz we have only one menu in db</p>
+        <p>/menu/item/ &mdash; return one particular menu item with specified id from specified menu (in url queries)</p>
+        <br>
+        <p>/authenticate POST &mdash; return access token if username and password are correct</p>
+        <br>
+        <p>Check out <a href="https://miruna-client.netlify.app/">frontend created by my teammates<a> and GitHub <a href="https://github.com/azatserikbaev/node-postgres-api">repo</a></p>
+    </div>
+    <div class="footer mt-auto py-3">
+        <div class="container">
+            <p class="text-muted">Astana IT University Practice Project, Fall 2020</p>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+
